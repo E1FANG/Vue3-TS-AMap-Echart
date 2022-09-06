@@ -31,6 +31,7 @@ const initMap = (containerId:string) => {
 
 export const useMap = () => {
   const addSingleMarker = (lnglat:LngLat)=>{
+    if(!mapReady.value) return 
     const marker = new AMap.Marker({
       position:lnglat,
     })
