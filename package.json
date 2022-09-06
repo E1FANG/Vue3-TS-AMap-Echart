@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@amap/amap-jsapi-types": "^0.0.8",
     "@types/echarts": "^4.9.16",
     "echarts": "^5.3.3",
+    "sass": "^1.54.8",
     "vue": "^3.2.37"
   },
   "devDependencies": {
