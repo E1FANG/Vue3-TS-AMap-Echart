@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import Echart from './Echart.vue'
-
  </script>
 
 <template>

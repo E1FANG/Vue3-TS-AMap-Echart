@@ -1,26 +1,23 @@
 <script setup lang="ts">
-import AMapLoader from "@amap/amap-jsapi-loader";
-import { onMounted, shallowRef } from "vue";
+import { useMap } from "@/hooks/useMap";
+import { nextTick, onMounted, watch } from "vue";
 
-const map = shallowRef(null);
 
-const initMap = () => {
-  AMapLoader.load({
-    key: '9b2fee67575241a7be9d613419723be4',//api服务key--另外需要在public中使用安全密钥！！！
-    version: '2.0',// 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
-    plugins: ['AMap.PlaceSearch', 'AMap.AutoComplete']// 需要使用的的插件列表
-    }).then((AMap) => {
-      map.value = new AMap.Map('container', {
-      resizeEnable: true,
-      zoom: 9.5, // 地图显示的缩放级别
-      center: [113.260038,23.127704]//中心点
-    })
-  })
-}
+const {initMap,addSingleMarker,mapReady} = useMap()
 
-onMounted(() => {
-initMap()
+initMap('container')
+
+
+
+watch(mapReady,(ready) => {
+  console.log(1111,'watch');
+  nextTick(() => {
+    if(ready){
+      addSingleMarker([113.260038, 23.127704])
+    }
+  });
 })
+
 </script>
 
 <template>
