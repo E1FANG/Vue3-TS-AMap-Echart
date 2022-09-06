@@ -1,13 +1,11 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import Echart from './components/Echart.vue'
 import AMap from './components/AMap.vue'
+import Overview from './views/overview/index.vue';
 </script>
 
 <template>
-  <Echart/>
   <AMap/>
+  <Overview/>
 </template>
 
 <style scoped>

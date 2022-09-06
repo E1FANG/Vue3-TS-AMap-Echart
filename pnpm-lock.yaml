@@ -4,6 +4,7 @@ specifiers:
   '@amap/amap-jsapi-loader': ^1.0.1
   '@amap/amap-jsapi-types': ^0.0.8
   '@types/echarts': ^4.9.16
+  '@types/node': ^18.7.15
   '@vitejs/plugin-vue': ^3.1.0
   echarts: ^5.3.3
   sass: ^1.54.8
@@ -21,6 +22,7 @@ dependencies:
   vue: 3.2.38
 
 devDependencies:
+  '@types/node': 18.7.15
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.38
   typescript: 4.8.2
   vite: 3.1.0_sass@1.54.8
@@ -73,6 +75,10 @@ packages:
     dependencies:
       '@types/zrender': 4.0.3
     dev: false
+
+  /@types/node/18.7.15:
+    resolution: {integrity: sha512-XnjpaI8Bgc3eBag2Aw4t2Uj/49lLBSStHWfqKvIuXD7FIrZyMLWp8KuAFHAqxMZYTF9l08N1ctUn9YNybZJVmQ==}
+    dev: true
 
   /@types/zrender/4.0.3:
     resolution: {integrity: sha512-EPI269lkHNsObwILJ1k1z7znLjKyePuWRy/XKK0shSGpBb9cIX307arcwJV4+2NeZj5wEjN06r4D8yFv7sI06g==}

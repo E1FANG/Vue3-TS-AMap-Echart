@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	height: 100%;
+	line-height: 1;
+	font-family: PingFangSC, PingFangSC-Medium;
+	background-color: #09152A;
+}
+ol, ul {
+	list-style: none;
+}
+div {
+	box-sizing: border-box;
+}
+
+.reset-pointer-event {
+	pointer-events: initial;
+}
+.text-select {
+	user-select: text;
+}
+::-webkit-scrollbar-corner {
+  background:transparent;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #0C65BB;
+	border-radius: 3px;
+}
+// height light title
+.height-light-title-con {
+  display: flex;
+  align-items: center;
+  .title {
+    flex: 1;
+    padding: 0 0 14px 0;
+    background-image: linear-gradient(180deg, #ebf9ff, #63d4ff 85%);
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 1.17px;
+    border-bottom: 2px solid rgba(0, 162, 255, 0.2);
+  }
+}
+
+input[type=number] {  
+	-moz-appearance:textfield;  
+}  
+input[type=number]::-webkit-inner-spin-button,  
+input[type=number]::-webkit-outer-spin-button {  
+	-webkit-appearance: none;  
+	margin: 0;  
+}  
+
