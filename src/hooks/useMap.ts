@@ -6,10 +6,10 @@ const map = shallowRef<AMap.Map | null>(null);
 
 const mapInstance = shallowReactive<{
   map:ShallowRef<AMap.Map | null>,
-  marker:AMap.Marker[]
+  markers:AMap.Marker[]
 }>({
   map,
-  marker:[],
+  markers:[],
 })
 
 const mapReady = ref(false)
@@ -35,7 +35,7 @@ export const useMap = () => {
       position:lnglat,
     })
     map.value?.add(marker)
-    mapInstance.marker.push(marker)
+    mapInstance.markers.push(marker)
     return marker
   }
   return {

@@ -1,21 +1,18 @@
 <script setup lang="ts">
 import { useMap } from "@/hooks/useMap";
-import { nextTick, onMounted, watch } from "vue";
+import { watch } from "vue";
 
 
-const {initMap,addSingleMarker,mapReady} = useMap()
+const { initMap, addSingleMarker, mapReady } = useMap()
 
 initMap('container')
 
 
 
-watch(mapReady,(ready) => {
-  console.log(1111,'watch');
-  nextTick(() => {
-    if(ready){
-      addSingleMarker([113.260038, 23.127704])
-    }
-  });
+watch(mapReady, (ready) => {
+  if (ready) {
+    addSingleMarker([113.260038, 23.127704])
+  }
 })
 
 </script>
