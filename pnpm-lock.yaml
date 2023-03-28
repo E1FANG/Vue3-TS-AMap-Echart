@@ -16,12 +16,12 @@ specifiers:
 dependencies:
   '@amap/amap-jsapi-loader': 1.0.1
   '@amap/amap-jsapi-types': 0.0.8
-  '@types/echarts': 4.9.16
   echarts: 5.3.3
   sass: 1.54.8
   vue: 3.2.38
 
 devDependencies:
+  '@types/echarts': 4.9.16
   '@types/node': 18.7.15
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.38
   typescript: 4.8.2
@@ -74,7 +74,7 @@ packages:
     resolution: {integrity: sha512-bfiagfPw3dWauAIJ9fgoJQoL4hLWlGcltqwbE6LGye0NIY5xnbZau+mDmadCzGojic3MWuFDCUiO25kl4sRGeA==}
     dependencies:
       '@types/zrender': 4.0.3
-    dev: false
+    dev: true
 
   /@types/node/18.7.15:
     resolution: {integrity: sha512-XnjpaI8Bgc3eBag2Aw4t2Uj/49lLBSStHWfqKvIuXD7FIrZyMLWp8KuAFHAqxMZYTF9l08N1ctUn9YNybZJVmQ==}
@@ -82,7 +82,7 @@ packages:
 
   /@types/zrender/4.0.3:
     resolution: {integrity: sha512-EPI269lkHNsObwILJ1k1z7znLjKyePuWRy/XKK0shSGpBb9cIX307arcwJV4+2NeZj5wEjN06r4D8yFv7sI06g==}
-    dev: false
+    dev: true
 
   /@vitejs/plugin-vue/3.1.0_vite@3.1.0+vue@3.2.38:
     resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
@@ -578,7 +578,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /sass/1.54.8:
@@ -659,7 +659,7 @@ packages:
       rollup: 2.78.1
       sass: 1.54.8
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /vue-tsc/0.40.8_typescript@4.8.2:
@@ -691,3 +691,13 @@ packages:
     dependencies:
       tslib: 2.3.0
     dev: false
+
+  r2.cnpmjs.org/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true

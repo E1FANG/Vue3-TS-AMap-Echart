@@ -11,7 +11,7 @@ const initEchart = () => {
       data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     },
     yAxis: {
-      type: 'value',
+      type: 'value'
     },
     series: [
       {
@@ -22,16 +22,12 @@ const initEchart = () => {
   }
   chartInstance.setOption(option);
 }
-
-onMounted(()=>{
-  initEchart()
-})
-
 </script>
 
 <template>
-  <div id="my-chart" style="width: 600px; height: 600px"></div>
+
 </template>
 
- <style lang="scss" scoped>
- </style>
+<style lang="scss" scoped>
+
+</style>
